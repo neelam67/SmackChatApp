@@ -1,5 +1,6 @@
 package com.example.smackchatapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
 
     fun onLoginNavHeaderClicked(view : View){
-
+        startActivity(Intent(this, LoginActivity::class.java))
     }
 
     fun onAddChannelNavHeaderClicked(view: View){
